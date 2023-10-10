@@ -1,23 +1,31 @@
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<h1>this is h1</h1>
-		<h2>this is not h1, this is h2. do not confuse them</h2>
-		<form onsubmit="go();return false">
-			<input
-				name="input"
-				type="text"
-				placeholder="put text here"
-				autocomplete="off"
-			/>
-			<input type="submit" value="submit" />
-		</form>
-		<button>blow up</button>
-	</body>
-	<script src="app.js"></script>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>dom</title>
+    </head>
+    <body>
+        <h1 id="counter">times cleared: 0</h1>
+        <h2>
+            <ol>
+                <li>put text in the input box</li>
+                <li>submit</li>
+                <li>the text is added below</li>
+                <li>press remove to remove the texts</li>
+            </ol>
+        </h2>
+        <form onsubmit="go();return false">
+            <input
+                name="input"
+                type="text"
+                placeholder="put text here"
+                autocomplete="off"
+            />
+            <input type="submit" value="submit" />
+        </form>
+        <div id="spam"></div>
+        <button onclick="remove();">remove</button>
+    </body>
+    <script src="app.js"></script>
 </html>
