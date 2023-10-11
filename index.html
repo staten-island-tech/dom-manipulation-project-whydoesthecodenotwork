@@ -1,31 +1,56 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>dom</title>
-    </head>
-    <body>
-        <h1 id="counter">times cleared: 0</h1>
-        <h2>
-            <ol>
-                <li>put text in the input box</li>
-                <li>submit</li>
-                <li>the text is added below</li>
-                <li>press remove to remove the texts</li>
-            </ol>
-        </h2>
-        <form onsubmit="go();return false">
-            <input
-                name="input"
-                type="text"
-                placeholder="put text here"
-                autocomplete="off"
-            />
-            <input type="submit" value="submit" />
-        </form>
-        <div id="spam"></div>
-        <button onclick="remove();">remove</button>
-    </body>
-    <script src="app.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>dom</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1 id="counter">times cleared: 0</h1>
+		<h2>
+			<ol>
+				<li>put text in the input box</li>
+				<li>submit</li>
+				<li>the text is added below</li>
+				<li>press remove to remove the texts</li>
+			</ol>
+		</h2>
+		<form onsubmit="go();return false">
+			<label>
+				first name:
+				<input
+					name="firstName"
+					type="text"
+					placeholder="first name"
+					autocomplete="off"
+					required
+				/>
+			</label>
+			<label>
+				last name:
+				<input
+					name="lastName"
+					type="text"
+					placeholder="last name"
+					autocomplete="off"
+					required
+				/>
+			</label>
+			<label>
+				age:
+				<input
+					name="age"
+					type="number"
+					placeholder="age"
+					autocomplete="off"
+					required
+				/>
+			</label>
+			<input type="submit" value="submit" />
+		</form>
+		<div id="spam"></div>
+		<button onclick="remove();">remove</button>
+	</body>
+	<script src="app.js"></script>
 </html>

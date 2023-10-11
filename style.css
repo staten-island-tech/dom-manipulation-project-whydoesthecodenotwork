@@ -1,0 +1,17 @@
+body {
+}
+
+.card {
+	border-width: 3%;
+	border-radius: 1%;
+	border-color: #000000;
+	border-style: solid;
+	width: 50vw;
+	height: 30vw;
+	display: flex;
+}
+
+.card .name {
+	text-shadow: 1px 1px 2px pink;
+	font-size: 3vw;
+}
