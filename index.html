@@ -3,20 +3,22 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>dom</title>
+		<title>real id card generator</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<h1 id="counter">cards deleted: 0</h1>
+		<h1>real id card generator</h1>
+		<h2 id="counter">cards deleted: 0</h2>
 		<h2>
 			<ol>
-				<li>fill the input fields</li>
+				<li>fill the input fields (name field is mandatory)</li>
 				<li>submit</li>
 				<li>an id card is created</li>
 				<li>click on a card to remove it</li>
 			</ol>
 		</h2>
 		<form onsubmit="go();return false">
+			<!-- using onsubmit instead of addEventListener because it looks like it does the same thing?? -->
 			<label>
 				name:
 				<input
@@ -28,13 +30,16 @@
 				/>
 			</label>
 			<label>
-				age:
+				issue date:
+				<input name="issuedate" type="date" autocomplete="off" />
+			</label>
+			<label>
+				id:
 				<input
-					name="age"
+					name="id"
 					type="number"
-					placeholder="age"
+					placeholder="id"
 					autocomplete="off"
-					required
 				/>
 			</label>
 			<label>
@@ -60,12 +65,33 @@
 				<div class="cardcontent">
 					<img class="avatar" src="profile.png" alt="john smith" />
 					<div class="text">
-						<h3 class="name">NAME: john smith</h3>
-						<h3 class="age">AGE: 20</h3>
+						<h3 class="name"></h3>
+						<h3 class="issuedate"></h3>
 					</div>
 				</div>
+				<svg id="barcode"></svg>
 			</div>
 		</template>
+
+		<ul>
+			<li class="ps">
+				siths id card barcodes are CODE39, this site uses
+				<a href="https://lindell.me/JsBarcode/">JsBarcode</a> to create
+				them
+			</li>
+			<li class="ps">
+				if you are trying to create a siths card, the long number in the
+				bottom left of the card is what the barcode is created from. it
+				is not the osis
+			</li>
+			<li class="ps">
+				I really want to know if scanning one of these id cards (printed
+				out, with a valid id) would work
+			</li>
+		</ul>
 	</body>
+	<script src="JsBarcode.code39.min.js"></script>
+	<!-- barcode script stolen from: https://lindell.me/JsBarcode/ 
+		 not imported from url because sometimes it was failing to import (very not good) -->
 	<script src="app.js"></script>
 </html>
