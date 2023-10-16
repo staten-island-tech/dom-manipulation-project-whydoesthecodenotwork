@@ -26,7 +26,8 @@ function go() {
 function append(obj) {
     console.log(obj);
 
-    const newCard = DOMSelectors["template"].cloneNode(true).children[0];
+    const newCard =
+        DOMSelectors["template"].content.children[0].cloneNode(true);
     // .content gets the document fragment of template
     // children[0] is to get the card (index 0) from the document fragment
     console.log(newCard);
