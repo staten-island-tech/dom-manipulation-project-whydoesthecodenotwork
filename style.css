@@ -1,77 +1,77 @@
 body {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #spam {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
 }
 
 .card * {
-	display: flex;
+    display: flex;
 }
 
 .card {
-	border-width: 1vw;
-	border-radius: 5px;
-	border-color: #000000;
-	border-style: solid;
-	width: 50vw;
-	flex-direction: column;
-	padding: 1vw;
-	clear: both;
+    border-width: 1vw;
+    border-radius: 5px;
+    border-color: #000000;
+    border-style: solid;
+    width: 50vw;
+    flex-direction: column;
+    padding: 1vw;
+    clear: both;
 }
 .cardcontent {
-	gap: 3%;
-	align-items: flex-start;
-	display: flex;
-	flex-direction: row;
+    gap: 3%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vw;
 }
 .card .institution {
-	font-size: 4vw;
-	margin: 0;
-	margin-bottom: 2vw;
-	word-break: break-word;
-	justify-content: center;
-	border-bottom: solid 3px #000000;
+    font-size: 4vw;
+    margin: 0;
+    margin-bottom: 2vw;
+    word-break: break-word;
+    justify-content: center;
+    border-bottom: solid 3px #000000;
 }
 .cardcontent .avatar {
-	width: 30%;
-	border-style: dashed;
-	border-width: 3px;
-	border-color: #000000;
-	margin-bottom: 0;
+    width: 30%;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: #000000;
+    margin-bottom: 0;
 }
 .cardcontent .text {
-	flex-direction: column;
-	text-shadow: 1px 1px 2px #000000;
-	word-break: break-word;
-	max-width: 75%;
-	width: max-content;
+    flex-direction: column;
+    text-shadow: 1px 1px 2px #000000;
+    word-break: break-word;
+    max-width: 75%;
+    width: max-content;
 }
 .cardcontent * {
-	margin: 0;
-	margin-bottom: 1vw;
+    margin: 0;
 }
 
 .cardcontent .name {
-	font-size: 4vw;
+    font-size: 4vw;
 }
 .cardcontent .issuedate {
-	font-size: 3vw;
+    font-size: 3vw;
 }
 
 .card .barcode {
-	width: 100%;
-	height: auto;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	margin-top: 1vw;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 0.5vw;
 }
 
 .ps {
-	font-style: italic;
+    font-style: italic;
 }
