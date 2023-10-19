@@ -63,7 +63,7 @@ body {
 	font-size: 3vw;
 }
 
-.card #barcode {
+.card .barcode {
 	width: 100%;
 	height: auto;
 	display: flex;
