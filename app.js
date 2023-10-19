@@ -54,6 +54,7 @@ function append(obj) {
 	// if no issue date was provided, get rid of the issue date element
 
 	properties["avatar"].style.background = obj["color"];
+	properties["avatar"].alt = obj["name"];
 
 	obj["institution"]
 		? (properties["institution"].innerText = obj["institution"])
